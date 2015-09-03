@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:padding="3dip"  
+    android:background="@drawable/white"
+    >  
+<TableLayout
+        android:id="@+id/tablelayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+   
+   <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+ 
+      <Button
+          android:id="@+id/btnReset"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_margin="4px"
+          android:layout_weight="5"
+          android:background="@drawable/theme_color"
+          android:text="@string/reset" />
+
+      <Button
+                android:id="@+id/btnregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme_color"
+                android:text="@string/register" 
+                android:layout_margin="4px"
+                android:layout_weight="5"
+                android:layout_gravity="right"
+                />
+    </TableRow>
+
+    <Button android:background="@drawable/white" />
+
+    <Button android:background="@drawable/white" />
+    
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/user_name" 
+            />
+ 
+        <EditText
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:textSize="10px"
+            android:hint="" />
+ 
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/login" 
+            android:layout_marginLeft="4px"/>
+ 
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" > 
+            <requestFocus />
+        </EditText> 
+    </TableRow>
+
+    <Button android:background="@drawable/white" />
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+ 
+      <Button
+                android:id="@+id/userlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme_color"
+                android:text="@string/login" 
+                android:layout_margin="4px"
+                android:layout_weight="20"
+                android:layout_gravity="center_vertical"
+                />     
+    </TableRow>
+  </TableLayout>
+</LinearLayout>  
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:padding="3dip"  
+    android:background="@drawable/white"
+    android:layout_gravity="center_vertical"
+    > 
+     <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:text="@string/register" 
+            android:layout_gravity="center"
+            />
+   
+
+   
+<TableLayout
+        android:id="@+id/tablelayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+  
+    <Button android:background="@drawable/white" />
+
+    <Button android:background="@drawable/white" /> 
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86" 
+            />
+ 
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="10px"
+            android:hint="电话号码" />
+        
+        <Button
+          android:id="@+id/btnVerificationCode"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="4px"
+          android:background="@drawable/theme_color"
+          android:text="获取验证码" />
+ 
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+ 
+       <TextView
+            android:id="@+id/tvVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="验证码" 
+            />
+ 
+        <EditText
+            android:id="@+id/etVerificationCode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="10px"
+            android:hint="" />
+    </TableRow>
+     <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+ 
+       <TextView
+            android:id="@+id/tvpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="设置密码" 
+            />
+ 
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="10px"
+            android:hint="" />
+    </TableRow>
+     <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+ 
+       <TextView
+            android:id="@+id/tvConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="确认密码" 
+            />
+ 
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="10px"
+            android:hint="" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+ 
+      <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme_color"
+                android:text="@string/register" 
+                android:layout_weight="20"
+                android:layout_gravity="center_vertical"
+                />     
+    </TableRow>
+
+  </TableLayout>
+      
+
+</LinearLayout>  
+
